@@ -1,0 +1,6 @@
+{
+  "name": "Downtown Haute Parfumerie",
+  "description": "Artisanal signature fragrance extraits hand-poured in 20ml pocket decants and 50ml crystal flacons.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --primary: #d4af37;
+    --primary-glow: #f2ca50;
+    --bg-dark: #18111c;
+    --bg-darkest: #120b16;
+    --surface-low: #201924;
+    --surface: #251d29;
+    --surface-high: #2f2733;
+    --surface-highest: #3a323e;
+    --text-main: #ecdeef;
+    --text-muted: #d0c5af;
+    --outline: #99907c;
+    --plum: #3e103f;
+    --plum-light: #663464;
+    --burgundy: #722f37;
+  }
+
+  body {
+    background-color: var(--bg-dark);
+    color: var(--text-main);
+    font-family: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+
+  h1, h2, h3, .font-serif {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #18111c;
+}
+::-webkit-scrollbar-thumb {
+  background: #3a323e;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #d4af37;
+}
+
+/* Luxury animations and effects */
+@keyframes goldPulse {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(212, 175, 55, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(212, 175, 55, 0.45);
+  }
+}
+
+.gold-glow-hover:hover {
+  box-shadow: 0 8px 30px rgba(212, 175, 55, 0.22);
+}
+
+.glass-panel {
+  background: rgba(32, 25, 36, 0.78);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(212, 175, 55, 0.15);
+}
+
+.glass-panel-heavy {
+  background: rgba(24, 17, 28, 0.94);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(212, 175, 55, 0.25);
+}
